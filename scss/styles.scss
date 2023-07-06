@@ -37,11 +37,11 @@ html, body {
   flex-direction: column;
   align-items: center;
   margin: 0 150px; /* Margen izquierdo y derecho  */
-  max-width: 1000px; 
-  margin-left: auto; 
-  margin-right: auto; 
-  padding: 20px; 
-  box-sizing: border-box; 
+  max-width: 1000px; /* Nuevo estilo para el cuadro de contenido */
+  margin-left: auto; /* Añadido para centrar horizontalmente */
+  margin-right: auto; /* Añadido para centrar horizontalmente */
+  padding: 20px; /* Añadido para agregar espacio alrededor del contenido */
+  box-sizing: border-box; /* Añadido para incluir el espacio de relleno en el ancho */
 }
 
 ul.menu {  /*centrado del menu*/
@@ -107,4 +107,24 @@ footer {
 
 .social-media a:last-child img {
   margin-right: 0;
+}
+
+//navegadores compatibles//
+@supports (-webkit-touch-callout: none) {
+  /
+  .banner-lateral {
+    height: -webkit-fill-available;
+  }
+
+  .content {
+    margin: 0 50px;
+  }
+}
+
+@supports (backdrop-filter: blur(10px)) {
+  
+  .banner-lateral.left, .banner-lateral.right {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
 }
