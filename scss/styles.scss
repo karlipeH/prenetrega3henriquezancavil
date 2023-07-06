@@ -37,11 +37,11 @@ html, body {
   flex-direction: column;
   align-items: center;
   margin: 0 150px; /* Margen izquierdo y derecho  */
-  max-width: 1000px; /* Nuevo estilo para el cuadro de contenido */
-  margin-left: auto; /* Añadido para centrar horizontalmente */
-  margin-right: auto; /* Añadido para centrar horizontalmente */
-  padding: 20px; /* Añadido para agregar espacio alrededor del contenido */
-  box-sizing: border-box; /* Añadido para incluir el espacio de relleno en el ancho */
+  max-width: 1000px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  padding: 20px; 
+  box-sizing: border-box; 
 }
 
 ul.menu {  /*centrado del menu*/
